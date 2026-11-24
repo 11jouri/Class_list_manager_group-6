@@ -15,6 +15,10 @@ def search_name(names, name):
         return True
     else:
         return False
+
+ #Written by: Jouri Alotaibi      
+ def sortNames(names): 
+     return sorted(names, key=str.lower)
   
 def main():
     print("Welcome to the Class List Manager!")
@@ -22,4 +26,6 @@ def main():
   
     print("Number of names:", count_names(names))
     print("search for Lama:", search_name(names, "Lama"))
+    
+    print("sorted names:", sortNames(names))
 main()
